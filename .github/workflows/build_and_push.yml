@@ -1,4 +1,4 @@
-learname: Production Demand Forecasting CICD
+name: Production Demand Forecasting CICD
 
 on:
   push:
