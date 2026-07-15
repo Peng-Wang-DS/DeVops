@@ -1,4 +1,5 @@
-import model_stack
-forecast = model_stack.forecaster(forecast_horizon=52)
+import util
+
+forecast = util.model_forecast(horizon=52)
 
 print(f"{forecast=}")
