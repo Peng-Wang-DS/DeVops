@@ -19,5 +19,5 @@ jobs:
 
       - name: image build and push to dockerhub public
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKERHUB_REPO}}:peng_demo
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKERHUB_REPO}}:peng_demo .
           docker push ${{ secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKERHUB_REPO}}:peng_demo
