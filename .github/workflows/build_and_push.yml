@@ -19,6 +19,6 @@ jobs:
       
       - name: image build and push to public
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/{{secrets.DOCKERHUB_REPO}}:latest .
-          docker run ${{ secrets.DOCKERHUB_USERNAME }}/{{secrets.DOCKERHUB_REPO}}:latest
+          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/${{secrets.DOCKERHUB_REPO}}:latest .
+          docker run ${{ secrets.DOCKERHUB_USERNAME }}/${{secrets.DOCKERHUB_REPO}}:latest
 
