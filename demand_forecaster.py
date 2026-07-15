@@ -1,5 +1,4 @@
-import pandas as pd
-import random 
+import model_stack
+forecast = model_stack.forecaster(forecast_horizon=52)
 
-df = pd.DataFrame([random.randint(1,10) for _ in range(10)],index=range(10),columns=['Forecast'])
-print(df)
+print(f"{forecast=}")
